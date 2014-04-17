@@ -2,6 +2,7 @@
 use Dv\Akeneo\Api\Client;
 use Dv\Akeneo\Api\Credentials;
 
+require 'vendor/autoload.php';
 require 'config.php';
 
 $cred = new Credentials($username, $apiKey, $salt);

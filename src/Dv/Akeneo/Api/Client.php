@@ -29,7 +29,7 @@ class Client {
 	 */
 	public function getHeaders(DateTimeImmutable $createdAt) {
 		$headers = array();
-		$headers[] = 'CONTENT_TYPE: application/json';
+		$headers[] = 'CONTENT-TYPE: application/json';
 		$headers[] = 'Authorization: WSSE profile="UsernameToken"';
 
 		$username = $this->cred->getUsername();
